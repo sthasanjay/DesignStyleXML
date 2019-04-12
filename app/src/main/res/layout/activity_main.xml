@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ebebeb"
+    android:scrollbars="vertical">
+
+    <TextView
+        android:id="@+id/topTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type and Run"
+        style="@style/title"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inLinear"
+        android:orientation="vertical"
+        android:layout_below="@+id/topTitle"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp">
+
+        <TextView
+            style="@style/simpleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Make:"/>
+
+        <EditText
+            style="@style/inputStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BNW"/>
+
+        <TextView
+            style="@style/simpleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Year:"/>
+
+        <EditText
+            style="@style/inputStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2012"/>
+
+        <TextView
+            style="@style/simpleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Color:"/>
+
+        <EditText
+            style="@style/inputStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Black"/>
+
+        <TextView
+            style="@style/simpleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Purchase Price(£):"/>
+
+        <EditText
+            style="@style/inputStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="38000"/>
+
+        <TextView
+            style="@style/simpleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Engine Size (litre):"/>
+
+        <EditText
+            style="@style/inputStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3.2"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inLinear"
+        android:id="@+id/btnCreateCar"
+        android:text="CREATE CAR"
+        style="@style/buttonStyle"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="40dp"/>
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inLinear"
+        android:layout_alignParentEnd="true"
+        android:text="CREATE DIESEL"
+        android:layout_centerInParent="true"
+        style="@style/buttonStyle"
+        android:layout_marginRight="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCreateCar"
+        android:text="
+        This is vehicle No:1
+        Manufacturer: Mini
+        "
+        style="@style/bottomTextView"
+        />
+
+</RelativeLayout>
